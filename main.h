@@ -39,24 +39,23 @@
 
 
 /**
- *
- *  * struct fmt - Struct op
+ * struct fmt - Struct op
  *
  *   *
  *
- *    * @fmt: The format.
+ * @fmt: The format.
  *
- *     * @fn: The function associated.
+ * @fn: The function associated.
  *
- *      */
+ */
 
 struct fmt
 
 {
 
-	char fmt;
+		char fmt;
 
-	int (*fn)(va_list, char[], int, int, int, int);
+			int (*fn)(va_list, char[], int, int, int, int);
 
 };
 
@@ -65,16 +64,14 @@ struct fmt
 
 
 /**
+ * typedef struct fmt fmt_t - Struct op
  *
- *  * typedef struct fmt fmt_t - Struct op
  *
- *   *
+ * @fmt: The format.
  *
- *    * @fmt: The format.
+ * @fm_t: The function associated.
  *
- *     * @fm_t: The function associated.
- *
- *      */
+ */
 
 typedef struct fmt fmt_t;
 
@@ -96,15 +93,15 @@ int handle_print(const char *fmt, int *i,
 
 int print_char(va_list types, char buffer[],
 
-		int flags, int width, int precision, int size);
+			int flags, int width, int precision, int size);
 
 int print_string(va_list types, char buffer[],
 
-		int flags, int width, int precision, int size);
+			int flags, int width, int precision, int size);
 
 int print_percent(va_list types, char buffer[],
 
-		int flags, int width, int precision, int size);
+			int flags, int width, int precision, int size);
 
 
 
@@ -112,27 +109,27 @@ int print_percent(va_list types, char buffer[],
 
 int print_int(va_list types, char buffer[],
 
-		int flags, int width, int precision, int size);
+			int flags, int width, int precision, int size);
 
 int print_binary(va_list types, char buffer[],
 
-		int flags, int width, int precision, int size);
+			int flags, int width, int precision, int size);
 
 int print_unsigned(va_list types, char buffer[],
 
-		int flags, int width, int precision, int size);
+			int flags, int width, int precision, int size);
 
 int print_octal(va_list types, char buffer[],
 
-		int flags, int width, int precision, int size);
+			int flags, int width, int precision, int size);
 
 int print_hexadecimal(va_list types, char buffer[],
 
-		int flags, int width, int precision, int size);
+			int flags, int width, int precision, int size);
 
 int print_hexa_upper(va_list types, char buffer[],
 
-		int flags, int width, int precision, int size);
+			int flags, int width, int precision, int size);
 
 
 
@@ -146,7 +143,7 @@ int print_hexa(va_list types, char map_to[],
 
 int print_non_printable(va_list types, char buffer[],
 
-		int flags, int width, int precision, int size);
+			int flags, int width, int precision, int size);
 
 
 
@@ -154,7 +151,7 @@ int print_non_printable(va_list types, char buffer[],
 
 int print_pointer(va_list types, char buffer[],
 
-		int flags, int width, int precision, int size);
+			int flags, int width, int precision, int size);
 
 
 
@@ -174,7 +171,7 @@ int get_size(const char *format, int *i);
 
 int print_reverse(va_list types, char buffer[],
 
-		int flags, int width, int precision, int size);
+			int flags, int width, int precision, int size);
 
 
 
@@ -182,7 +179,7 @@ int print_reverse(va_list types, char buffer[],
 
 int print_rot13string(va_list types, char buffer[],
 
-		int flags, int width, int precision, int size);
+			int flags, int width, int precision, int size);
 
 
 
@@ -190,19 +187,19 @@ int print_rot13string(va_list types, char buffer[],
 
 int handle_write_char(char c, char buffer[],
 
-		int flags, int width, int precision, int size);
+			int flags, int width, int precision, int size);
 
 int write_number(int is_positive, int ind, char buffer[],
 
-		int flags, int width, int precision, int size);
+			int flags, int width, int precision, int size);
 
 int write_num(int ind, char bff[], int flags, int width, int precision,
 
-		int length, char padd, char extra_c);
+			int length, char padd, char extra_c);
 
 int write_pointer(char buffer[], int ind, int length,
 
-		int width, int flags, char padd, char extra_c, int padd_start);
+			int width, int flags, char padd, char extra_c, int padd_start);
 
 
 
@@ -210,7 +207,7 @@ int write_unsgnd(int is_negative, int ind,
 
 		char buffer[],
 
-		int flags, int width, int precision, int size);
+			int flags, int width, int precision, int size);
 
 
 
