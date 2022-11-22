@@ -98,8 +98,6 @@ int _printf(const char *format, ...)
 
 }
 
-
-
 /**
  * print_buffer - Prints the contents of the buffer if it exist
  *
@@ -112,12 +110,9 @@ int _printf(const char *format, ...)
 void print_buffer(char buffer[], int *buff_ind)
 
 {
-
 	if (*buff_ind > 0)
 
 		write(1, &buffer[0], *buff_ind);
-
-
 
 	*buff_ind = 0;
 
