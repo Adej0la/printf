@@ -1,5 +1,12 @@
 #include "main.h"
 
+/**
+ * _printf - formats string and prints it to
+ * stdout
+ * @format: string format
+ *
+ * Return: the character count of string
+ */
 int _printf(const char *format, ...)
 {
 	va_list ap;

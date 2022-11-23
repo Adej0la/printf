@@ -3,7 +3,8 @@
 /**
  * _parser - parses the format string for format specifiers
  * @format: the format string
- * @f_arr: an array of format specifier types with corresponding conversion functions
+ * @f_arr: an array of format specifier types with corresponding
+ * conversion functions
  * @ap: a variable arguments list
  *
  * Return: the character count of the formatted string
